@@ -215,7 +215,7 @@ function animateTitles() {
     TweenMax.set(el, {
       x: getRandomNumber(-20,20), 
       y: getRandomNumber(-20,20),
-      color: ['#95dc77','#f3eb8a','#f9b97f'][cycles-1]
+      color: ['#639b53','#639b53','#639b53'][cycles-1]
     });
     setTimeout(() => {
       TweenMax.set(el, {x: 0, y: 0, color: '#fff'});
