@@ -42,7 +42,7 @@ function createLandscape(params){
     sky()
 
     camera = new THREE.PerspectiveCamera(60, width / height, .1, 10000);
-    camera.position.y = 8;
+    camera.position.y = 18;
     camera.position.z = 4;
     
     ambientLight = new THREE.AmbientLight(0xffffff, 1);
@@ -61,14 +61,14 @@ function createLandscape(params){
 
   function sceneElements(){
 
-    var geometry = new THREE.PlaneBufferGeometry(100, 400, 400, 400);
+    var geometry = new THREE.PlaneBufferGeometry(200, 400, 400, 400);
 
     var uniforms = {
       time: { type: "f", value: 0.0 },
       distortCenter: { type: "f", value: 0.1 },
       roadWidth: { type: "f", value: 0.5 },
       pallete:{ type: "t", value: null},
-      speed: { type: "f", value: 0.5 },
+      speed: { type: "f", value: 0.8 },
       maxHeight: { type: "f", value: 10.0 },
       color:new THREE.Color(1, 1, 1)
     }

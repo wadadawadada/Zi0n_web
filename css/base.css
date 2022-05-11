@@ -12,10 +12,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #fff;
 	--color-bg: #0e0e0f;
-	--color-link: #EC8F7B;
+	--color-link: #ffffff;
 	--color-link-hover: #fff;
 	--color-title: #fff;
-	--color-subtitle: #fff;
+	--color-subtitle: #639b53;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: Barlow, Arial, sans-serif;
