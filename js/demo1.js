@@ -42,8 +42,9 @@ function createLandscape(params){
     sky()
 
     camera = new THREE.PerspectiveCamera(60, width / height, .1, 10000);
-    camera.position.y = 18;
+    camera.position.y = 28;
     camera.position.z = 4;
+    camera.rotation.x = -0.11;
     
     ambientLight = new THREE.AmbientLight(0xffffff, 1);
     scene.add(ambientLight)

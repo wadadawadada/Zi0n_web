@@ -95,6 +95,7 @@ a:focus {
 	z-index: 1000;
 }
 
+
 .frame__title {
 	font-size: 1rem;
 	margin: 0 0 1rem;
@@ -130,10 +131,16 @@ a:focus {
 	align-items: center;
 }
 
+div.image::before {
+	position: relative;
+	content:url(logo.png);
+ }
+
+
 .content__title {
 	position: relative;
 	color: var(--color-title);
-	font-size: 10vw;
+	font-size: 5vw;
 	text-transform: uppercase;
 	margin: 0;
 	perspective: 1000px;
@@ -186,6 +193,7 @@ a:focus {
 							'... ... ...'
 							'... demos ...';
 	}
+	
 	.frame__title-wrap {
 		grid-area: title;
 		justify-self: center;
