@@ -15,10 +15,10 @@ body {
 	--color-link: #ffffff;
 	--color-link-hover: #fff;
 	--color-title: #fff;
-	--color-subtitle: #639b53;
+	--color-subtitle: #ffffff;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: Barlow, Arial, sans-serif;
+	font-family: Roboto Mono, Arial, sans-serif;
 	overflow: hidden;
 	height: 100vh;
 }
