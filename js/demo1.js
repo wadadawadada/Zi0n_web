@@ -34,7 +34,7 @@ function createLandscape(params){
 
   function sceneSetup(){
     scene = new THREE.Scene();
-    var fogColor = new THREE.Color( 0xffffff )
+    var fogColor = new THREE.Color( 0x639b53 )
     scene.background = fogColor;
     scene.fog = new THREE.Fog(fogColor, 10, 400);
 
@@ -61,7 +61,7 @@ function createLandscape(params){
 
   function sceneElements(){
 
-    var geometry = new THREE.PlaneBufferGeometry(200, 400, 400, 400);
+    var geometry = new THREE.PlaneBufferGeometry(300, 400, 400, 400);
 
     var uniforms = {
       time: { type: "f", value: 0.0 },
@@ -228,7 +228,7 @@ function animateTitles() {
         const titleLettersShuffled = titleLetters.sort((a,b) => 0.5 - Math.random());
         const lettersSet = titleLettersShuffled.slice(0, getRandomNumber(1,titleLetters.length+1));
         for (let i = 0, len = lettersSet.length; i < len-1; ++i) {
-          glitch(lettersSet[i], 3);
+          glitch(lettersSet[i], 8);
         }
         loop();
     }, startAt || getRandomNumber(500, 3000));
