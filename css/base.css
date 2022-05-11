@@ -10,12 +10,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #fff;
+	--color-text: #5b9b53;
 	--color-bg: #0e0e0f;
 	--color-link: #ffffff;
-	--color-link-hover: #fff;
-	--color-title: #fff;
-	--color-subtitle: #ffffff;
+	--color-link-hover: #ffffff;
+	--color-title: #5b9b53;
+	--color-subtitle: #5b9b53;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: Roboto Mono, Arial, sans-serif;
@@ -233,7 +233,7 @@ div.image::before {
 		pointer-events: auto;
 	}
 	.content {
-		height: 100vh;
+		height: 60vh;
 		padding: 0 0 10rem 0;
 		justify-content: flex-end;
 	}
