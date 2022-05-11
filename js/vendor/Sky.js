@@ -159,9 +159,9 @@ THREE.Sky.SkyShader = {
 		'}',
 
 		// Filmic ToneMapping http://filmicgames.com/archives/75
-		'const float A = 0.15;',
+		'const float A = 0.05;',
 		'const float B = 0.50;',
-		'const float C = 0.10;',
+		'const float C = 0.05;',
 		'const float D = 0.20;',
 		'const float E = 0.02;',
 		'const float F = 0.30;',
@@ -207,7 +207,7 @@ THREE.Sky.SkyShader = {
 		'	float sundisk = smoothstep( sunAngularDiameterCos, sunAngularDiameterCos + 0.00002, cosTheta );',
 		'	L0 += ( vSunE * 19000.0 * Fex ) * sundisk;',
 
-		'	vec3 texColor = ( Lin + L0 ) * 0.04 + vec3( 0.0, 44.0003, 1.00075 );',
+		'	vec3 texColor = ( Lin + L0 ) * 0.04 + vec3( 0.2, 0.5, 0.00055 );',
 
 		'	vec3 curr = Uncharted2Tonemap( ( log2( 2.0 / pow( luminance, 4.0 ) ) ) * texColor );',
 		'	vec3 color = curr * whiteScale;',
